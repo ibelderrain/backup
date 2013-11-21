@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">UfastaMovil</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">UFasta Móvil</string>
+    <string name="progressmsg">Cargando, por favor espere.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
 
 </resources>

@@ -21,6 +21,7 @@ public class BaseApplication extends Application {
 		persister.clear();
 	}
 
+	@SuppressWarnings("null")
 	public void saveCurrentState() {
 
 		Field[] fields = getClass().getDeclaredFields();
@@ -68,7 +69,7 @@ public class BaseApplication extends Application {
 
 	}
 
-	@SuppressWarnings("unused")
+	@SuppressWarnings({ "unused", "null" })
 	protected void restoreSavedState() {
 		Field[] fields = getClass().getDeclaredFields();
 		for (Field f : fields) {

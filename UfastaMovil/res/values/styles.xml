@@ -1,20 +1,22 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarStyle" tools:targetApi="11">@style/ActionBar</item>
     </style>
 
     <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:titleTextStyle" tools:targetApi="11">@style/ActionBarTitleStyle</item>
+        <item name="titleTextStyle">@style/ActionBarTitleStyle</item>
+        <item name="background">@color/ufasta_main</item>
+        <item name="android:background">@color/ufasta_main</item>
+    </style>
+
+    <style name="ActionBarTitleStyle" parent="">
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>
